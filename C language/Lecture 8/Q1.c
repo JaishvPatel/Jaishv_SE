@@ -35,5 +35,5 @@ main(){
 		s1.per=s1.total/3;
 	}
 	printf("SrNo\tName\tSub1\tSub2\tSub3\tTotal\tPer\n");
-	printf("%d\t%s\t%d\t%d\t%d\t%d\t%f",s1.srno,s1.name,s1.sub1,s1.sub2,s1.sub3,s1.total,s1.per);
+	printf("%d\t%s\t%d\t%d\t%d\t%d\t%.2f",s1.srno,s1.name,s1.sub1,s1.sub2,s1.sub3,s1.total,s1.per);
 }

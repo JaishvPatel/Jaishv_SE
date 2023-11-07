@@ -1,0 +1,43 @@
+TOPS Assignment 1
+
+Q1. What is software? What is software engineering?
+-> Software is a set of instructions, data, or programs used to operate computers and execute specific tasks.
+-> Software engineering is the branch of computer science that deals with the design, development, testing, and maintenance of software applications.
+
+Q2. Explain types of software.
+-> The five most common types of software are :
+● Application software :  Application software is a computer
+software package that performs a specific function for a user, or in some cases, for another application. Example : Microsoft Office, Paint, Powerpoint, etc.
+● System software : These are designed to run a computer's application programs and hardware. It controls the operations of the computer hardware and provides an environment or platform for all the other types of software to work in. Example: OS, Notepad, Calculator, etc.
+● Driver software : It control the devices and peripherals connected to a computer, enabling them to perform their specific tasks. Every device that is connected to a computer needs at least one driver software to function. Example : Audio Driver, Video Driver, etc.
+● Middleware : A software that mediates between application and system software or between two different kinds of application software. Example : Database middleware, application software middleware, etc.
+● Programming software : This software is used by programmers  to write code. Programming software and programming tools enable developers to develop, write, test and debug other software programs. Example : Visual Studio Code, Turbo c, Eclipse, etc.
+
+Q3. What is SDLC? Explain each phase of SDLC.
+-> The Software Development Life Cycle (SDLC) refers to a methodology with clearly defined processes for creating high-quality software.
+
+●Planning : In this phase, a proper plan is made regarding the software which is to be developed.
+●Analysis : In this phase, a deep analysis is made which includes analysing team members, and other requirements.
+●Design : In this phase, a complete design of the software is created.
+●Implementation : In this phase, the software is implemented by making the code/programme made by a programmer understable to the machine.
+●Testing : In this phase, the software is being tested by the testers. If the software is not working properly and have any types of bugs, then is sent back to programmer to debug it, else it is sent forward.
+●Maintenance : In this phase, the software is monitored to ensure that it is functioning properly and upgrades are performed in that.
+
+Q4. What is DFD? Create a DFD diagram on Flipkart.
+-> A data-flow diagram(DFD) is a way of representing a flow of data through a process or a system. It also provides information about the outputs and inputs of each entity and the process itself.
+
+Q5.  What is Flow chart? Create a flowchart to make addition of two numbers.
+-> A flowchart is a type of diagram that represents a workflow or process. In simple words, it is a diagrammatic representation of an algorithm, a step-by-step approach to solve a task. 
+
+Q6. What is Use-Case Diagram? Create a use-case on bill payment on paytm.
+-> A use case diagram is a graphical depiction of a user's possible interactions with a system. 
+
+
+
+
+
+
+
+
+
+

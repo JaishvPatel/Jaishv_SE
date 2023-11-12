@@ -1,0 +1,11 @@
+TOPS Assignment - 
+
+Q1. Define the terms: Website, Webpage, Web browser, Web server, HTML, CSS.
+-> Website - A set of related web pages located under a single domain name, typically produced by a single person or organization.
+-> Webpage - A hypertext document on the World Wide Web with it's own address.
+-> Web Browser - A web browser is a software application for accessing and retrieving data from websites and the Internet.
+-> Web Server - A web server is computer software and underlying hardware that accepts requests via HTTP or its secure variant HTTPS. It displays website content through storing, processing and delivering webpages to users.
+-> HTML - The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content.
+-> CSS - Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. It is a cornerstone technology of World Wide Web.
+
+Q2. 

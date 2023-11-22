@@ -1,0 +1,69 @@
+Module - 5
+
+Q1. What do you understand by Database ?
+-> A database is an organized collection of structured information, or data, typically stored electronically in a computer system.
+
+Q2. What is Normalization?
+-> Database normalization is the process of structuring a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity.
+
+Q3. What is the differenece between DBMS and RDBMS?
+->The differences between DBMS and RDBMS are : 
+1. In DBMS, data stored is in the file format while in RDBMS, data stored is in table format.
+2. DBMS supports a single user but RDBMS supports multiple users.
+3. Examples of DBMS are XML, Microsoft Access and examples of RDBMS are Oracle, SQL Server.
+
+Q4. What is E.F Codd Rule of RDBMS ?
+-> A computer scientist, E.F Codd proposed a set of 13 rules numbered from 0 to 12, popularly known as Codd's 12 rules to test DBMS's concept against his relational model.The Codd's 12 rules are as follows.
+
+Rule zero:
+This rule states that for a system to qualify as an RDBMS, it must be able to manage database entirely through the relational capabilities.
+
+Rule 1: Information rule
+All information(including metadata) is to be represented as stored data in cells of tables. The rows and columns have to be strictly unordered.
+
+Rule 2: Guaranted Access
+Each unique piece of data(atomic value) should be accesible by : Table Name + Primary Key(Row) + Attribute(column).
+
+NOTE: Ability to directly access via POINTER is a violation of this rule.
+
+Rule 3: Systematic treatment of NULL
+Null has several meanings, it can mean missing data, not applicable or no value. It should be handled consistently. Also, Primary key must not be null, ever. Expression on NULL must give null.
+
+Rule 4: Active Online Catalog
+Database dictionary(catalog) is the structure description of the complete Database and it must be stored online. The Catalog must be governed by same rules as rest of the database. The same query language should be used on catalog as used to query database.
+
+Rule 5: Powerful and Well-Structured Language
+One well structured language must be there to provide all manners of access to the data stored in the database. Example: SQL, etc. If the database allows access to the data without the use of this language, then that is a violation.
+
+Rule 6: View Updation Rule
+All the view that are theoretically updatable should be updatable by the system as well.
+
+Rule 7: Relational Level Operation
+There must be Insert, Delete, Update operations at each level of relations. Set operation like Union, Intersection and minus should also be supported.
+
+Rule 8: Physical Data Independence
+The physical storage of data should not matter to the system. If say, some file supporting table is renamed or moved from one disk to another, it should not effect the application.
+
+Rule 9: Logical Data Independence
+If there is change in the logical structure(table structures) of the database the user view of data should not change. Say, if a table is split into two tables, a new view should give result as the join of the two tables. This rule is most difficult to satisfy.
+
+Rule 10: Integrity Independence
+The database should be able to enforce its own integrity rather than using other programs. Key and Check constraints, trigger etc, should be stored in Data Dictionary. This also make RDBMS independent of front-end.
+
+Rule 11: Distribution Independence
+A database should work properly regardless of its distribution across a network. Even if a database is geographically distributed, with data stored in pieces, the end user should get an impression that it is stored at the same place. This lays the foundation of distributed database.
+
+Rule 12: Nonsubversion Rule
+If low level access is allowed to a system it should not be able to subvert or bypass integrity rules to change the data. This can be achieved by some sort of looking or encryption.
+
+Q5. What do you understand by Data Redundancy?
+-> Data Redundancy in a database occurs when multiple copies of the same data is stored in more than one place.
+
+Q6. What is DDL Interpreter?
+-> DDL Interpreter processes the DDL(Data Definition Language) statements into a set of table containing meta data (data about data).
+
+Q7. What is DML Compiler in SQL?
+-> DML Compiler compiles(or translates) the DML(Data Manipulation Language) statements such as Select, Update and Delete statements into low-level instructions or the machine-readable object code to make it executable.
+
+Q8. What is SQL Key Constraints? Write an example of SQL Key contraint.
+-> SQL Key constraints are basically used to specify rules for the data in a table. It limits the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, the action is aborted. Example: PRIMARY KEY constraint, FOREIGN KEY constraint, CHECK KEY constraint, etc.

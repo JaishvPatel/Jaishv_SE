@@ -1,0 +1,25 @@
+.box1{
+    display: flex;
+    justify-content: center;
+}
+.box2{
+height: 100px;
+width: 100px;
+background-color: red;
+margin: 5px;
+padding: 5px;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin: 5px;
+    padding: 5px;
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 5px;
+    padding: 5px;
+}

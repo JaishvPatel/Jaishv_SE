@@ -1,0 +1,16 @@
+Module - 4
+
+Q2. What is OOP? List OOP concepts.
+-> Object-Oriented Programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. The four different types of OOP cincepts are :
+1. Abstraction
+2. Encapsulation
+3. Inheritance
+4. Polymorphism
+
+Q3. What is the diffrence between OOP and POP?
+->The differences between OOP and POP are:
+1. OOP refers to Object-Oriented Programming and POP refers to Procedure-Oriented Programming.
+2.  OOP deals with objects and their properties while POP deals with programs and functions.
+3.  OOP uses the bottom-up approach while POP uses the top-down approach.
+4. OOP supports polymorphism while POP does not support polymorphism.
+5. OOP supports virtual functions and virtual classes while POP does not support virtual functions and virtual classes.

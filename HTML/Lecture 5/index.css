@@ -1,0 +1,17 @@
+.hover::after{
+    content: "Jaishv";
+    font-size: 24px;
+    font-weight: lighter;
+}
+.hover::first-line{
+    font-size: 52px;
+    color: red;
+}
+.hover:hover{
+    color: white;
+    background-color: aqua;
+}
+.hover::selection{
+    background-color: black;
+    color: green;
+}

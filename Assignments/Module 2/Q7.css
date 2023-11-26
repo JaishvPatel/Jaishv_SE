@@ -1,0 +1,15 @@
+.box1{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    margin: 10px;
+}
+
+.box2{
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+}
+.box3{
+    background-color: aqua;
+}

@@ -1,38 +1,43 @@
 #include<iostream>
 using namespace std;
 
-class person{
-	public:
-		void name(){
-			string name;
-			cout<<"Enter your name : ";
-			cin>>name;
-		}
-		void age(){
-			int age;
-			cout<<"Enter your age : ";
-			cin>>age;
-		}
-};
-
 class student{
 	public:
 		void percentage(int a){
-			cout<<"Your student's percentage is : "<<a<<"%";
+			cout<<"Your percentage is : "<<a<<"%";
 		}
 };
 
-class teacher:public person,public student{
+class teacher{
 	public:
 		void salary(int b){
 			cout<<"Your salary is : "<<b;
 		}
 };
 
+class person:public student,public teacher{
+	public:
+		void name(){
+			string name;
+			cout<<"Enter your name : ";
+			cin>>name;
+		}
+		int age(){
+			int age;
+			cout<<"Enter your age : ";
+			cin>>age;
+			return age;
+		}
+};
+
 main(){
-	teacher obj;
+	person obj;
+	int c;
 	obj.name();
-	obj.age();
-	obj.salary(25000);
-	obj.percentage(85);
+	c=obj.age();
+	if(c<19){
+		obj.percentage(85);
+	}else{
+		obj.salary(25000);
+	}
 }

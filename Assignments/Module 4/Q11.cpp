@@ -3,7 +3,8 @@ using namespace std;
 
 class students{
 	public:
-		void rollno(int rn){
+		void rollno(){
+			int rn;
 			cout<<"Enter your roll number : ";
 			cin>>rn;
 		}
@@ -19,10 +20,21 @@ class test{
 		}
 };
 
-class result{
+class result:public test,public students{
 	public:
 		int totalm(int a,int b){
+			int t;
 			t=a+b;
 			return t;
 		}
 };
+
+main(){
+	result obj;
+	int c;
+	obj.rollno();
+	obj.Mathsm(95);
+	obj.Engm(85);
+	c=obj.totalm(95,85);
+	cout<<"The result of the student is = "<<c<<"/200.";
+}

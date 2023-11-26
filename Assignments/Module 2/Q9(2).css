@@ -1,0 +1,21 @@
+h1{
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.par{
+    border: 2px solid black;
+    border-radius: 24px;
+    padding: 8px;
+    /* height: 150px;
+    width: 150px; */
+    /* Just fix the height to write the paragraph content from top to bottom. */
+    overflow: auto;
+}
+
+#name{
+    margin: 50px;
+}

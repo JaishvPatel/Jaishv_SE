@@ -1,0 +1,23 @@
+PYTHON THEORY
+
+->  Python was concieved IN LATE 1980.
+-> The implementatio of python was started in 1989 by Guido Van Rossum in CWI which is situated in Netherland.
+-> The first version of python was released on February 20,1991.
+-> The latest version of python is 3.12.0 which was released on October 2, 2023.
+
+Q. What is Python?
+-> Python is a high-level, interpreted, object-oriented programming language.
+
+Scope of python?
+1. Artificial Intelligence
+2. Data Science
+3. Machine Learning
+4. Python Developer
+5. Data Analytics
+
+-------------------------------------------------------------------------------------------------------------------------------------
+1) Conditional Statements
+i) If (condition):
+	statement
+else:
+	statement

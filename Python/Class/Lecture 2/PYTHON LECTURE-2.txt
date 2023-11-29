@@ -1,0 +1,48 @@
+PYTHON LECTURE-2
+
+ii) Ladder if-else condition
+
+if(condition):
+	statement
+elif(condition):
+	statement
+else:
+	statement
+
+iii) Nested if-else condition
+
+if(condition):
+	if(condition):
+		statement
+	else:
+		statement
+else:
+	if(condition):
+		statement
+	else:
+		statement
+
+Looping:
+
+1) Entry Control loop
+2) Exit Control loop
+
+1) Entry Control:
+
+	A) While loop
+	B)For loop
+
+2) Exit Control:
+
+	A)Do-while loop
+
+Loop 3 counters:
+i) While loop:
+1) Initialize
+2) Condition
+3)Increment
+
+ii) For loop:
+1)Initialize
+2)Final
+3)Increment

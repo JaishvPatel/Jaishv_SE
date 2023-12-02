@@ -1,0 +1,10 @@
+Python Module-2 Q/A
+
+Q4. How memory is managed in Python?
+-> Python has a private heap that stores our program’s objects and data structures. Python memory manager takes care of the bulk of the memory management work and allows us to concentrate on our code.
+
+Q5. What is the purpose continue statement in python?
+-> The continue statement is used to skip the remaining code inside a loop for the current iteration only.
+
+Q14. What are negative indexes and why are they used?
+-> Negative indexing retrieves elements from the end by providing negative numbers as sequence indexes. It starts from index -1 for the last list item, subtracting down in reverse fashion toward the first item. Negative indexing is used in Python to manipulate sequence objects such as lists, arrays, strings, etc. 

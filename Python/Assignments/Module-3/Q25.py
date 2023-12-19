@@ -1,0 +1,20 @@
+t1=('prashant','jaishv','meet','darshan')
+t2=('dev','nitya','divyam','prakrut','jaivik')
+print("Tuple 1 : ",t1)
+print("Tuple 2 : ",t2)
+l1=list(t1)
+l2=list(t2)
+c=len(t1)
+c1=len(t2)
+l=[]
+for i in range (c):
+    l.append(l1[c-1])
+    l1.remove(l1[c-1])
+for i in range (c1):
+    l.append(l2[c1-1])
+    l2.remove(l2[c1-1])
+t1=tuple(l1)
+t2=tuple(l2)
+print("The tuple 1 after replacing is : ",t1)
+print("The tuple 2 after replacing is : ",t2)
+print("The list is : ",l)

@@ -3,15 +3,15 @@ using namespace std;
 
 class student{
 	public:
-		void percentage(int a){
-			cout<<"Your percentage is : "<<a<<"%";
+		void percentage(int per){
+			cout<<"Your percentage is : "<<per<<"%";
 		}
 };
 
 class teacher{
 	public:
-		void salary(int b){
-			cout<<"Your salary is : "<<b;
+		void salary(int sal){
+			cout<<"Your salary is : "<<sal;
 		}
 };
 

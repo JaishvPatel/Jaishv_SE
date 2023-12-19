@@ -3,35 +3,35 @@ using namespace std;
 
 class bank{
 	public:
-		char[20] Name;
-		int AccNo;
-		char[20] AccType;
-		int Bal;
-		int d,w;
+		string Name;
 		void values(){
+			int AccNo;
 			cout<<"Enter your name here : ";
 			cin>>Name;
 			cout<<"Enter your account number here : ";
 			cin>>AccNo;
 		}
 		int deposit(){
+			int d;
 			cout<<"Enter the amount you want to deposit in the account : ";
 			cin>>d;
 			return d;
 		}
 		int withdraw(){
+			int w;
 			cout<<"Enter the amount you want to withdraw from the account : ";
 			cin>>w;
 			return w;
 		}
 		void display(){
+			int Bal=0,d,w;
 			cout<<"Name : "<<Name<<endl;
 			Bal=d-w;
-			cout<<"Balance in your account : "<<Bal<<enl;
+			cout<<"Balance in your account : "<<Bal<<endl;
 		}
 };
 
-void main(){
+main(){
 	bank obj;
 	int i;
 	obj.values();

@@ -1,0 +1,1 @@
+This is write + read mode.This is read+write mode.

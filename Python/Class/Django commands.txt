@@ -1,0 +1,11 @@
+Django commands
+1) install virtual environment -> pip install virtualenv
+2) create virtual environment -> python -m venv (environment name)
+3) entering the environment-> cd (environment name)
+4) Activate scripts -> Scripts\activate
+5) install django framework -> pip install django
+6) create / start project -> django-admin startproject (project name)
+7) entering the project -> cd (project name)
+8) create application -> python manage.py startapp myapp
+9) python manage.py migrate -> to execute in-built tables
+10) run server -> python manage.py runserver

@@ -1,0 +1,139 @@
+Module-5 Database
+
+Q1. What do you understand by Database?
+-> A database is a structured collection of data that is organized and stored for easy access, management, and retrieval. It can be of various types, including relational databases, NoSQL databases, and more. Databases are essential for storing and managing large volumes of information efficiently.
+
+Q2. What is Normalization?
+-> Normalization is a process in database design that organizes tables and attributes to reduce data redundancy and improve data integrity. The goal is to eliminate data anomalies, such as insertion, update, and deletion errors, by decomposing tables into smaller, related tables and establishing relationships between them.
+
+Q3. What is the Difference between DBMS and RDBMS?
+-> DBMS (Database Management System) is a software application that interacts with the user, applications, and the database itself to capture and analyze data. RDBMS (Relational Database Management System) is a type of DBMS that uses a relational model, defining relationships between tables, enforcing constraints, and supporting SQL queries.
+
+Q4. What is MF Cod Rule of RDBMS Systems?
+-> It seems there might be a typo in your question. If you mean "Codd's Rules," then it refers to the 12 rules proposed by Edgar F. Codd, the pioneer of the relational model. These rules define the requirements that a database management system must meet to be considered a relational database management system (RDBMS).
+
+Q5. What do you understand by Data Redundancy?
+->Data redundancy occurs when the same piece of data is stored in multiple places in a database. It can lead to inconsistencies and increased storage requirements. Normalization is one technique used to minimize data redundancy in a database.
+
+Q6. What is DDL Interpreter?
+-> DDL (Data Definition Language) Interpreter is a component of a database management system responsible for interpreting and executing DDL commands. DDL commands are used to define, modify, and manage the structure of the database, including creating tables, altering table structures, and defining constraints.
+
+Q8. What is DML Compiler in SQL?
+-> DML (Data Manipulation Language) Compiler is responsible for interpreting and executing DML commands in SQL (Structured Query Language). DML commands are used to manipulate and query data in a database, including operations such as inserting, updating, deleting, and retrieving data.
+
+Q9. What is SQL Key Constraints? Write an Example of SQL Key Constraints.
+-> SQL key constraints define rules for the relationships between tables. Examples include: PRIMARY KEY, CHECK, etc.
+
+Tables
+Q1.
+CREATE TABLE Student(
+	Rollno Int(5) Primary Key AUTO_INCREMENT,
+	Name VARCHAR(30),
+	Branch VARCHAR(30)
+);
+CREATE TABLE Exam(
+	Rollno INT(5) REFERNCES Student(Rollno),
+	S_code VARCHAR(30),
+	Marks INT(5),
+	P_code VARCHAR(30)
+);
+
+INSERT INTO Student (Name,Branch) VALUES (Jay, Computer Science), (Suhani, Electronic and Com), (Kriti, Electronic and Com);
+INSERT INTO Student (Rollno, S_code,Marks,P_code) VALUES (1,CS11,50,CS)(1,CS12,60,CS), (2,EC101,66,EC), (2,EC102,70,EC), (3,EC101,45,EC), (3,EC102,50,EC);
+
+Q2.
+CREATE TABLE Employee(
+	Employee_id Int(5) PRIMARY KEY AUTO_INCREMENT,
+	First_Name varchar(30),
+	Last_Name varchar(30),
+	Salary Int(5),
+	Joining_date Date,
+	Department varchar(30)
+);
+
+CREATE TABLE Incentive(
+	Employee_ref_id int(5) References Employee(Employee_id),
+	Incentive_date date,
+	Incentive_amount int(5)
+)
+
+-> INSERT INTO Employee (First_Name,Last_Name,Salary,Joining_date,Department) VALUES (John,Abraham,1000000,01-JAN-13 12.00.00 AM), (Michael,Clark,800000,01-JAN-13 12.00.00 AM,Insurance), (Roy,Thomas,700000,01-FEB-13,Banking),
+(Tom,Jose,600000,01-FEB-13 12.00.00 AM,Insurance),(Jary,Pinto,650000,01-Feb-13 12.00.00 AM,Insurance),
+(Philip,Mathew,750000,01-Feb-13 12.00.00 AM,Services),(Testname1,123,650000,01-FEB-13 12.00.00 AM,Services),
+(Testname2,Lname%,650000,01-Feb-13 12.00.00 AM,Services);
+-> INSERT INTO Incentive Values (1,01-FEB-13,5000),(2,01-FEB-13,3000),(3,01-FEB-13,4000),(1,01-JAN-13,4500),
+(2,01-JAN-13,3500);
+
+Queryes
+Q3. 
+SELECT First_Name FROM Employee WHERE "Employee Name" LIKE '%Tom%';
+
+Q4.
+SELECT FIRST_NAME, "Joining Date", Salary FROM Employee;
+
+Q5.
+SELECT * FROM Employee ORDER BY First_Name ASC, Salary DESC;
+
+Q6.
+SELECT * FROM Employee WHERE First_Name LIKE '%J%';
+
+Q7.
+SELECT Department, MAX(Salary) AS MaxSalary FROM Employee GROUP BY Department ORDER BY MaxSalary ASC;
+
+Q8.
+SELECT Department, MAX(Salary) AS MaxSalary FROM Employee GROUP BY Department ORDER BY MaxSalary ASC;
+
+Q9.
+CREATE TRIGGER after_employee_insert AFTER INSERT ON Employee FOR EACH ROW BEGIN
+    INSERT INTO viewtable (employee_id, first_name, last_name, ...)
+    VALUES (NEW.employee_id, NEW.first_name, NEW.last_name, ...);
+END;
+
+Q10.
+CREATE TRIGGER after_employee_insert AFTER INSERT ON Employee FOR EACH ROW BEGIN
+    INSERT INTO viewtable (employee_id, first_name, last_name, ...)
+    VALUES (NEW.employee_id, NEW.first_name, NEW.last_name, ...);
+END;
+
+Q12.
+SELECT * FROM SALSESPERSON;
+
+SELECT * FROM  Customer;
+
+Q13.
+SELECT * FROM orders WHERE order_amount > 1000;
+
+Q14.
+SELECT salesperson_name, city FROM salespeople WHERE city = 'London' AND commission > 0.12;
+
+Q15.
+SELECT salesperson_name, city FROM salespeople WHERE city = 'London' OR city = 'Barcelona';
+
+Q16.
+SELECT * FROM salespeople WHERE commission > 0.10 AND commission < 0.12;
+
+17.
+SELECT *
+FROM customers
+WHERE rating > 100 OR (rating <= 100 AND city = 'Rome');
+
+Q18.
+SELECT salesman_id, name, city, commission FROM salespeople;
+
+Q19.
+SELECT ord_no, ord_date, purch_amt FROM orders WHERE salesman_id = 5001;
+
+Q20.
+SELECT PRO_ID, PRO_NAME, PRO_PRICE, PRO_COM FROM item_mast WHERE PRO_PRICE BETWEEN 200.00 AND 600.00;
+
+Q21.
+SELECT AVG(PRO_PRICE) AS avg_price FROM item_mast WHERE PRO_COM = 16;
+
+Q22.
+SELECT PRO_NAME AS 'Item Name', PRO_PRICE AS 'Price in Rs.' FROM item_mast;
+
+Q23.
+SELECT PRO_NAME, PRO_PRICE FROM item_mast WHERE PRO_PRICE >= 250.00 ORDER BY PRO_PRICE DESC, PRO_NAME ASC;
+
+Q24.
+SELECT PRO_COM AS 'Company Code', AVG(PRO_PRICE) AS 'Average Price' FROM item_mast GROUP BY PRO_COM;

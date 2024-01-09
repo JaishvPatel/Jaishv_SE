@@ -27,6 +27,8 @@ print(l)
 
 l.reverse()  # it will reverse the list
 print(l)
+
+del l   # it will delete the whole list. If any specific element is provided then it will delete that element from the list
 """
 l1=[1,5,7,3,2,4,5]
 l1.sort()  # it will sort the list

@@ -1,0 +1,46 @@
+Module-4 Q/A
+
+Q1. What is File function in python? What is keywords to create and write file.
+-> The key function for working with files in Python is the open() function. "w" is the keywords to create and write files.
+
+Q13. Explain Exception handling? What is an Error in Python?
+->Exception handling is the process of responding to unwanted or unexpected events when a computer program runs. Exception handling deals with these events to avoid the program or system crashing, and without this process, exceptions would disrupt the normal operation of a program. An error is an issue in a program that prevents the program from completing its task.
+
+Q14. How many except statements can a try-except block have? Name Some built-in exception classes.
+-> A try-except block must have atleast one time.Some built-in exception classes are KeyError, EOFError, ZeroDivisionError, etc.
+
+Q15. When will the else part of try-except-else be executed?
+-> The else part is executed when no exception occurs.
+
+Q16. Can one block of except statements handle multiple exception?
+-> Yes, a single block of except statements in Python can handle multiple exceptions.
+
+Q17. When is the finally block executed?
+-> The finally block is executed at the end of the program.
+
+Q18. What happens when „1‟== 1 is executed?
+-> False
+or object 
+Q21. What are oops concepts? Is multiple inheritance supported in java.
+-> Object-oriented programming is a core of Java Programming, which is used for designing a program using classes and objects.
+-> No, multiple inheritance is not supported by java.
+
+Q22. How to Define a Class in Python? What Is Self? Give An Example Of A Python Class.
+-> We define a class in python using the class keyword. The self is used to represent the instance of the class. With this keyword,  can access the attributes and methods of the class in python.
+
+Q27. Explain Inheritance in Python with an example? What is init? Or What Is A Constructor In Python?
+-> Inheritance is a mechanism that allows you to create a hierarchy of classes that share a set of properties and methods by deriving a class from another class. It is the capability of one class to derive or inherit the properties from another class. 
+-> Init method in python is the constructor for object initialization.
+-> Constructor in Python is a special class method for creating and initializing an object instance at that class.
+
+Q28. What is Instantiation in terms of OOP terminology?
+-> In the OOP language, instantiation describes the processes of creating a new object for a class using a new keyword.
+
+Q29. What is used to check whether an object o is an instance of class A?
+-> The isinstance () function checks whether an object is an instance of the class mentioned. One can also test if an object or variable is an instance of the type or class.
+
+Q30. What relationship is appropriate for Course and Faculty?
+-> Assosiation
+
+Q31. What relationship is appropriate for Student and Person?
+-> Composition
